@@ -1,7 +1,12 @@
+@use "~rfs/scss" as *;
+
 section {
     background-color: #002233;
-    height: 300px;
-    margin-top: -5rem;
+    color: #FFF;
+    //@include rfs(-8rem, margin-top);
+    @include rfs(5rem, padding-bottom);
+  
+
 }
 .services {
 }

@@ -12,7 +12,8 @@
         line-height: 160%;
     }
 
-    img {
-        @include rfs(35rem, height);
+    &__image {
+        @include rfs(40rem, height);
+        @include rfs(5rem, padding);
     }
 }
