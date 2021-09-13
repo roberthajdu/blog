@@ -1,0 +1,29 @@
+@use "../abstracts/mixins";
+
+/* Reset */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%; /* default: 16px */
+
+    @include mixins.respond("phone") {
+        font-size: 50%;
+    }
+
+    @include mixins.respond("tab-port") {
+        font-size: 56.25%;
+    }
+
+    @include mixins.respond("tab-land") {
+        font-size: 50%;
+    }
+    @include mixins.respond("big-desktop") {
+        font-size: 75%;
+    }
+}

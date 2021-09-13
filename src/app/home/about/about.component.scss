@@ -1,0 +1,14 @@
+.about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &__text-box {
+        align-self: center;
+    }
+    &__image {
+        img {
+            height: 500px;
+        }
+    }
+}

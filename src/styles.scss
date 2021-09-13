@@ -1,5 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 
+@use "styles/abstracts/mixins" as *;
+
+@use "styles/base/base";
+@use "styles/base/typography";
+
 $color-primary: #6665dd;
 $color-primary-dark: #473bf0;
 $color-primary-light: #9b9ece;
