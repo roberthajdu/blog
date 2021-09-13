@@ -1,7 +1,8 @@
 @use "~rfs/scss" as *;
 
 .wave {
-    width: 100%;
+    width: -webkit-fill-available;
+    height: auto;
 }
 section {
     background-color: #002233;

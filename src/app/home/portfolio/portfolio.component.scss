@@ -2,7 +2,6 @@
 
 .portfolio {
     @include rfs(8rem, padding-top);
-
     .h2 {
         margin-bottom: 30px;
     }
@@ -12,5 +11,10 @@
 .portfolio-item {
     img {
         @include rfs(1rem, padding);
+    }
+
+    &__description {
+        @include rfs(2rem, padding);
+
     }
 }
