@@ -1,14 +1,17 @@
-.about {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+@use "~rfs/scss" as *;
 
-    &__text-box {
-        align-self: center;
+.hero {
+    .h1 {
+        margin-bottom: 30px;
     }
-    &__image {
-        img {
-            height: 500px;
-        }
+    &__paragraph {
+        @include rfs(1.3rem, font-size);
+        @include rfs(2rem, margin-bottom);
+        margin-bottom: 30px;
+        line-height: 160%;
+    }
+
+    img {
+        @include rfs(35rem, height);
     }
 }

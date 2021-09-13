@@ -1,15 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+@use "~rfs/scss" as *;
+@import "styles/abstracts/variables";
+@import "styles/abstracts/mixins";
 
-@use "styles/abstracts/mixins" as *;
+@import "styles/base/base";
+@import "styles/base/bootstrap";
+@import "styles/base/typography";
 
-@use "styles/base/base";
-@use "styles/base/typography";
+@import "styles/components/button";
 
-$color-primary: #6665dd;
-$color-primary-dark: #473bf0;
-$color-primary-light: #9b9ece;
-$color-grey: #acadbc;
-$color-black: #000500;
 
 @font-face {
     font-family: "Poppins";

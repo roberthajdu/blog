@@ -1,0 +1,15 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+
+.h1 {
+    font-weight: 700;
+    @include font-size(4rem);
+}
+
+.h2 {
+    font-weight: 600;
+    @include font-size(3rem);
+
+    &--white {
+        color: white;
+    }
+}

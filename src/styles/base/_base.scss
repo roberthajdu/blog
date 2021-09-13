@@ -1,4 +1,4 @@
-@use "../abstracts/mixins";
+@import "../abstracts/mixins";
 
 /* Reset */
 *,
@@ -9,21 +9,23 @@
     box-sizing: inherit;
 }
 
-html {
-    font-size: 62.5%; /* default: 16px */
+// html {
+//     //font-size: 1rem;
+//     font-size: 62.5%; /* default: 16px */
+    
+//     @include respond('large') {
+//         font-size: 62.5%;
+//     }
+    
+//     @include respond('medium') {
+//         font-size: 56.25%;
+//     }
 
-    @include mixins.respond("phone") {
-        font-size: 50%;
-    }
+//     @include respond('small') {
+//         font-size: 50%;
+//     }
 
-    @include mixins.respond("tab-port") {
-        font-size: 56.25%;
-    }
 
-    @include mixins.respond("tab-land") {
-        font-size: 50%;
-    }
-    @include mixins.respond("big-desktop") {
-        font-size: 75%;
-    }
-}
+
+
+// }

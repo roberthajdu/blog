@@ -1,0 +1,22 @@
+@use "~rfs/scss" as *;
+
+.button {
+    border: none;
+    background: none;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    border-radius: 1rem;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: .1em;
+    background-color: $color-primary-dark;
+    /* background: linear-gradient(
+        135deg,#943ffd,#10beeb); */
+    @include rfs(1rem, padding-top);
+    @include rfs(1rem, padding-bottom);
+    @include rfs(3rem, padding-left);
+    @include rfs(3rem, padding-right);
+    display: inline-block;
+}
