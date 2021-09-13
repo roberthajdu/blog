@@ -7,13 +7,15 @@ import { AboutComponent } from './about/about.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ServicesComponent } from './services/services.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { PostShowcaseComponent } from './post-showcase/post-showcase.component';
 
 @NgModule({
   declarations: [
     HomeComponent,
     AboutComponent,
     PortfolioComponent,
-    ServicesComponent
+    ServicesComponent,
+    PostShowcaseComponent
   ],
   imports: [
     CommonModule,
