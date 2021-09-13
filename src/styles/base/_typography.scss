@@ -3,3 +3,31 @@ body {
     color: $color-black;
 }
 
+.h1 {
+    font-weight: 700;
+    @include font-size(4rem);
+}
+
+.h2 {
+    font-weight: 600;
+    @include font-size(3rem);
+
+    &--white {
+        color: white;
+    }
+}
+
+.h2-subtitle {
+    color: #473bf0;
+    font-weight: 600;
+    text-transform: uppercase;
+    @include font-size(1.3rem);
+    letter-spacing: .2rem;
+}
+
+.h3-subtitle {
+    color: #473bf0;
+    font-weight: 600;
+    text-transform: uppercase;
+    @include font-size(1rem);
+}

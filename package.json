@@ -28,8 +28,10 @@
     "@scullyio/scully": "^1.0.0",
     "bootstrap": "^5.1.1",
     "bulma": "^0.9.3",
+    "ngx-owl-carousel-o": "^6.0.0",
     "rfs": "^9.0.6",
     "rxjs": "~6.6.0",
+    "swiper": "^7.0.5",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
   },
