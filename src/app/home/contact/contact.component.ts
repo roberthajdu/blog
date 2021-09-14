@@ -17,6 +17,7 @@ export class ContactComponent implements OnInit {
     email: new FormControl(''),
     service: new FormControl(''),
     message: new FormControl(''),
+    isAccepted: new FormControl(false)
   });
 
   constructor(

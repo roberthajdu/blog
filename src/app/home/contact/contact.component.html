@@ -39,12 +39,20 @@
                     <textarea name="message" class="form-control" row="5" formControlName="message">
                     </textarea>
                 </div>
+                <div class="form-check pt-3">
+                    <input class="form-check-input" type="checkbox" value="" id="isAccepted" formControlName="isAccepted">
+                    <label class="form-check-label" for="isAccepted">
+                        Elfogadom az adatkezelési nyilatkozatot és engedélyezem,
+                        hogy a megadott elérhetőségeken felvegyétek velem a kapcsolatot. 
+                    </label>
+                </div>
+
                 <div class="form-action d-flex align-items-center flex-column">
-                    <button type="submit" class="form__submit-button">Elküldöm</button>
-        
+                    <button type="submit" class="form__submit-button" [disabled]="!this.contactForm.controls.isAccepted.value">Elküldöm</button> 
                 </div>
     
             </div>
+
         </form>
     </div>
     <div class="container" *ngIf="isSubmitted">

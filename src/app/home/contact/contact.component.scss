@@ -15,11 +15,16 @@
         text-transform: uppercase;
         font-weight: 500;
 
-        &:hover {
+        &:hover:not(:disabled) {
             color: #9b9ece;
             &::after {
                 content: '>'
             }
+        }
+
+        &:disabled {
+            color: grey;
+            cursor: default;
         }
     }
 }
