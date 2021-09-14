@@ -10,6 +10,7 @@
         class="contact-form d-flex flex-column form"
         netlify netlify-honeypot="bot-field"
         [formGroup]="contactForm"
+        (ngSubmit)="onSubmit()"
         >
     
             <input type="hidden" name="form-name" value="contact">
