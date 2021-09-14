@@ -13,12 +13,4 @@ export class AboutComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  scrollTo(): void {
-    document.getElementById("targetGreen")?.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-      inline: "nearest"
-    });
-  }
-
 }
