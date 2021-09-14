@@ -20,7 +20,7 @@ const routes: Routes = [
   },
   { path: 'blog', loadChildren: () => import('./blog/blog.module').then(m => m.BlogModule) },
   { path: 'home', component: HomeComponent },
-  { path: 'success', component: SuccessComponent }
+  { path: 'success-submit', component: SuccessComponent }
 ];
 
 @NgModule({
