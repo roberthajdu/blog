@@ -9,7 +9,6 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ImpressumComponent } from './impressum/impressum.component';
 import { HomeModule } from './home/home.module';
-import { SuccessComponent } from './success/success.component';
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
@@ -18,7 +17,6 @@ import { HttpClientModule } from '@angular/common/http';
     HeaderComponent,
     FooterComponent,
     ImpressumComponent,
-    SuccessComponent
   ],
   imports: [
     BrowserModule,

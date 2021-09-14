@@ -1,7 +1,12 @@
-<h3>ScullyIo content</h3>
-<hr>
-
-<!-- This is where Scully will inject the static HTML -->
-<scully-content></scully-content>
-<hr>
-<h4>End of content</h4>
+<section>
+    g
+    <div class="container">
+        <div class="blog-posts">
+            <div class="blog-post" *ngFor="let post of posts$ | async">
+                <a [routerLink]="post.route">
+                    <div class="blog-post__title">{{ post.title }}</div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
