@@ -18,6 +18,7 @@ export class BlogComponent implements OnInit {
   ) {
     this.posts$ = this.scully.available$.pipe(
       map(routeList => {
+        console.log('RL', routeList);
         return routeList.filter((route: ScullyRoute) => {
           return route.route.startsWith(`/blog/`);
         })
