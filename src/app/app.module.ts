@@ -10,6 +10,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { ImpressumComponent } from './impressum/impressum.component';
 import { HomeModule } from './home/home.module';
 import { SuccessComponent } from './success/success.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { SuccessComponent } from './success/success.component';
     AppRoutingModule,
     BrowserAnimationsModule ,
     ScullyLibModule,
+    HttpClientModule,
     HomeModule
   ],
   providers: [],

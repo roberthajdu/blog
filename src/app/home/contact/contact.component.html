@@ -4,8 +4,6 @@
         <h2 class="h2 text-center">Kapcsolat</h2>
         <form
         name="contact-form" 
-        method="POST"
-        data-netlify="true"
         class="contact-form d-flex flex-column form"
         action="success-submit"
 
@@ -38,7 +36,7 @@
                     </textarea>
                 </div>
                 <div class="form-action d-flex align-items-center flex-column">
-                    <button type="submit" class="form__submit-button">Elküldöm</button>
+                    <button (click)="lel()" class="form__submit-button">Elküldöm</button>
         
                 </div>
     
