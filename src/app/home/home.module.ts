@@ -8,6 +8,8 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ServicesComponent } from './services/services.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { PostShowcaseComponent } from './post-showcase/post-showcase.component';
+import { ContactComponent } from './contact/contact.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -15,10 +17,12 @@ import { PostShowcaseComponent } from './post-showcase/post-showcase.component';
     AboutComponent,
     PortfolioComponent,
     ServicesComponent,
-    PostShowcaseComponent
+    PostShowcaseComponent,
+    ContactComponent
   ],
   imports: [
     CommonModule,
+    ReactiveFormsModule,
     HomeRoutingModule,
     CarouselModule,
   ]
