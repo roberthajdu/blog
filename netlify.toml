@@ -1,3 +1,7 @@
 [build]
   command = "npm run scully:build"
   publish = "dist/static"
+[[redirects]]
+  from="/*"
+  to="/index.html"
+  status=200
