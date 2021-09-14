@@ -1,3 +1,4 @@
+import { HttpClientModule } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
@@ -12,9 +13,10 @@ export class ContactComponent implements OnInit {
 
   constructor(
     private readonly formBuilder: FormBuilder,
+    private readonly http: HttpClientModule
   ) {
     this.form = this.formBuilder.group({
-      name: ['', Validators.required],
+      name: ['d', Validators.required],
       email: [''],
       mobile: [''],
       message: ['', Validators.required]
@@ -24,5 +26,22 @@ export class ContactComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  handleSubmit(event: any): any {
+    event.preventDefault();
+    let formData = new FormData().append('name', 'a');
+    fetch('/', {
+      method: 'POST',
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: this.encode(this.form).toString()
+    }).then(() => console.log('Form successfully submitted')).catch((error) =>
+    alert(error))
+
+  }
+
+  encode(data: any): string {
+    return Object.keys(data)
+        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+        .join("&")
+  }
 
 }
