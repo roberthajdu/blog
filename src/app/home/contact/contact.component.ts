@@ -25,6 +25,7 @@ export class ContactComponent implements OnInit {
 
   onSubmit() {
     this.formService.submitForm(this.contactForm.value).subscribe(_ => {
+      console.log('submitted');
       this.isSubmitted = true;
     })
   };
