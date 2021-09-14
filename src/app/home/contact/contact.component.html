@@ -1,12 +1,14 @@
 <form
     name="contact-form" 
-    method="POST"
     data-netlify="true"
+    [formGroup]="form"
     >
     <input type="hidden" name="form-name" value="contact-form">
 
     <label for="name">Név:</label>
-    <input type="text" name="name" class="input" />
+    <input formControlName="name" type="text" name="name" class="input" />
 
-    <button type="submit">Submit</button>
+    <button (click)="submitForm()">Submit</button>
 </form>
+
+{{ form.value | json }}
