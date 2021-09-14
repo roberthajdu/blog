@@ -9,13 +9,15 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ImpressumComponent } from './impressum/impressum.component';
 import { HomeModule } from './home/home.module';
+import { SuccessComponent } from './success/success.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    ImpressumComponent
+    ImpressumComponent,
+    SuccessComponent
   ],
   imports: [
     BrowserModule,
