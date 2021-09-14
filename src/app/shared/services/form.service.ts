@@ -10,7 +10,7 @@ export class FormService {
   constructor(private readonly http: HttpClient) { }
 
   submitForm(): Observable<any> {
-    return this.http.post('/', { name: 'lol'}, {
+    return this.http.post('/', this.encode({ 'name': 'lol'}), {
       headers: { "Content-Type": "application/x-www-form-urlencoded" }
     });
   }
