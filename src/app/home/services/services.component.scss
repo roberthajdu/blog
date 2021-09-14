@@ -8,6 +8,7 @@ section {
     background-color: #002233;
     color: #FFF;
     //@include rfs(-8rem, margin-top);
+    @include rfs(5rem, padding-top);
     @include rfs(5rem, padding-bottom);
   
 
