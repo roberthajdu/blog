@@ -1,31 +1,31 @@
-<!-- 
+
 <section id="contact" class="p-5">
     <div class="container">
         <div class="h2-subtitle text-center">Írj nekem</div>
         <h2 class="h2 text-center">Kapcsolat</h2>
         <form
-        name="contact-form" 
+        name="contact" 
         method="POST"
         data-netlify="true"
         class="contact-form d-flex flex-column form"
-        action="success-submit"
-
+        netlify netlify-honeypot="bot-field"
+        [formGroup]="contactForm"
         >
     
-            <input type="hidden" name="form-name" value="contact-form">
+            <input type="hidden" name="form-name" value="contact">
     
             <div class="col-lg-6 col-md-10 mx-auto">
                 <div class="form-group">
                     <label for="name" class="form-label">Név*</label>
-                    <input type="text" name="name" class="form-control" required />
+                    <input type="text" name="name" class="form-control" formControlName="name" required />
                 </div>
                 <div class="form-group">
                     <label for="email" class="form-label">E-mail</label>
-                    <input type="email" name="email" class="form-control" />
+                    <input type="email" name="email" class="form-control" formControlName="email" />
                 </div>
                 <div class="form-group">
                     <label for="service" class="form-label">Miben segíthetek?</label>
-                    <select id="service" name="service" class="form-select">
+                    <select id="service" name="service" class="form-select" formControlName="service">
                         <option value="Weboldal- vagy alkalmazásfejlesztés">Weboldal- vagy alkalmazásfejlesztés</option>
                         <option value="Tanácsadás">Tanácsadás</option>
                         <option value="Karbantartás">Karbantartás</option>
@@ -35,7 +35,7 @@
                 </div>
                 <div class="form-group">
                     <label for="message" class="form-label">Üzenet*</label>
-                    <textarea name="message" class="form-control" row="5">
+                    <textarea name="message" class="form-control" row="5" formControlName="message">
                     </textarea>
                 </div>
                 <div class="form-action d-flex align-items-center flex-column">
@@ -48,33 +48,4 @@
     </div>
     
 </section>
- -->
 
- <div id='container'>
-    <div id='form-wrapper'>
-      <form [formGroup]='contactForm' name="contact" id='contact-form' method="post" (ngSubmit)="onSubmit()" netlify netlify-honeypot="bot-field">
-        <input type="hidden" name="form-name" value="contact" />
-        <p style='display: none;'>
-          <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
-        </p>
-        <h2>Contact Me!</h2>
-        <div id='form-row-wrapper'>
-        <div class='form-row'>
-          <label>Your Name: </label><input type='text' name="name" formControlName="name" required/>
-        </div>
-        <div class='form-row'>
-          <label>Email Address: </label><input type='email' name="email" formControlName="email" required/>
-        </div>
-        <div class='form-row'>
-          <label>A Favorite Work of Art: </label><input type='text' name="art" formControlName="art"/>
-        </div>
-        <div class='form-row'>
-          <label>Your Message:</label><textarea id='message' name="message" formControlName="message" required></textarea>
-        </div>
-        <div id='button-row'>
-          <button id='submit-button' type='submit'>Send!</button>
-        </div>
-        </div>
-      </form>
-    </div>
-  </div>
