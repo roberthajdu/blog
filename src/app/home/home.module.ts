@@ -20,7 +20,7 @@ import { PostShowcaseComponent } from './post-showcase/post-showcase.component';
   imports: [
     CommonModule,
     HomeRoutingModule,
-    CarouselModule
+    CarouselModule,
   ]
 })
 export class HomeModule { }

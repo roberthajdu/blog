@@ -8,6 +8,7 @@ import { ScullyLibModule } from '@scullyio/ng-lib';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ImpressumComponent } from './impressum/impressum.component';
+import { HomeModule } from './home/home.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ImpressumComponent } from './impressum/impressum.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule ,
-    ScullyLibModule
+    ScullyLibModule,
+    HomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
