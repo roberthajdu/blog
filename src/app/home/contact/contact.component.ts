@@ -24,10 +24,27 @@ export class ContactComponent implements OnInit {
   ) {};
 
   onSubmit() {
-    this.formService.submitForm(this.contactForm.value).subscribe(_ => {
-      console.log('submitted');
-      this.isSubmitted = true;
-    })
+    this.formService.submitForm(this.contactForm.value).subscribe(
+      res => {},
+      err => {
+        if (err instanceof ErrorEvent) {
+          //client side error
+          alert("Something went wrong when sending your message.");
+          console.log(err.error.message);
+        } else {
+          //backend error. If status is 200, then the message successfully sent
+          if (err.status === 200) {
+            this.isSubmitted = true;
+          } else {
+            alert("Something went wrong when sending your message.");
+            console.log('Error status:');
+            console.log(err.status);
+            console.log('Error body:');
+            console.log(err.error);
+          };
+        };
+      }
+    )
   };
 
   ngOnInit() {
