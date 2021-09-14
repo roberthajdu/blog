@@ -1,0 +1,25 @@
+.form {
+    .form-label {
+        padding-top: 1rem;
+    }
+    .form-control, .form-select {
+        border: 2px solid black;
+    }
+    &__submit-button {
+        margin-top: 1rem;
+        border: 0;
+        background: none;
+        color: #473bf0;
+        padding: 1rem 2rem;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        font-weight: 500;
+
+        &:hover {
+            color: #9b9ece;
+            &::after {
+                content: '>'
+            }
+        }
+    }
+}
