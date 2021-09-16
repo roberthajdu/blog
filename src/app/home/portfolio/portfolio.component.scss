@@ -22,7 +22,8 @@
 .portfolio-item {
     img {
         @include rfs(1rem, padding);
-        border-radius: 2rem;
+        border-radius: 2rem; 
+        max-height: 500px;     
     }
 
     &__description {
