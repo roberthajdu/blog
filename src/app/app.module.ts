@@ -56,7 +56,7 @@ const cookieConfig: NgcCookieConsentConfig = {
     ScullyLibModule,
     HttpClientModule,
     HomeModule,
-    NgcCookieConsentModule.forRoot(cookieConfig)
+    //NgcCookieConsentModule.forRoot(cookieConfig)
   ],
   providers: [],
   bootstrap: [AppComponent]

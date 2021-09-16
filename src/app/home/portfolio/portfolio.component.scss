@@ -3,6 +3,7 @@
 .portfolio {
     @include rfs(8rem, padding-top);
     position: relative;
+    overflow: hidden;
     .h2 {
         margin-bottom: 30px;
     }
