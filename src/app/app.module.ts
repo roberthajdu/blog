@@ -10,6 +10,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { ImpressumComponent } from './impressum/impressum.component';
 import { HomeModule } from './home/home.module';
 import { HttpClientModule } from '@angular/common/http';
+import { GdprComponent } from './gdpr/gdpr.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { HttpClientModule } from '@angular/common/http';
     HeaderComponent,
     FooterComponent,
     ImpressumComponent,
+    GdprComponent,
   ],
   imports: [
     BrowserModule,
