@@ -1,7 +1,18 @@
 @use "~rfs/scss" as *;
+@import "../../../styles/abstracts/variables";
 
 .hero {
     @include rfs(1rem, margin-top);
+
+    &__bg-svg {
+        position: absolute;
+        @include rfs(10rem, left);
+        z-index: -1;
+        width: 20rem;
+        opacity: 0.03;
+
+    }
+
     .h1 {
         margin-bottom: 30px;
     }

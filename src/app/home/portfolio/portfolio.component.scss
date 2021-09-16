@@ -2,8 +2,19 @@
 
 .portfolio {
     @include rfs(8rem, padding-top);
+    position: relative;
     .h2 {
         margin-bottom: 30px;
+    }
+
+    &__bg-svg {
+        position: absolute;
+        @include rfs(-10rem, right);
+        @include rfs(-10rem, bottom);
+        z-index: -1;
+        width: 20rem;
+        opacity: 0.03;
+
     }
 
 }
@@ -11,6 +22,7 @@
 .portfolio-item {
     img {
         @include rfs(1rem, padding);
+        border-radius: 2rem;
     }
 
     &__description {
