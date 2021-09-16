@@ -12,8 +12,15 @@ collections:
       - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Description", name: "description", widget: "string"}
+      - {label: "Featured Image", name: "thumbnail", widget: "image", required: false}
       - {label: "Slug", name: "slug", widget: "string"}
       - {label: "Publish Date", name: "publishDate", widget: "datetime"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Published", name: "published", widget: "boolean", default: true}
+    preview_path: "blog/{{slug}}"
 media_folder: 'static/img' # Folder where user uploaded files should go
+slug:
+  encoding: "ascii",
+  clean_accents: true,
+  sanitize_replacement: "_"
+display_url: https://hajdurobert.hu
