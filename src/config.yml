@@ -18,7 +18,9 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Published", name: "published", widget: "boolean", default: true}
     preview_path: "blog/{{slug}}"
-media_folder: 'static/img' # Folder where user uploaded files should go
+media_folder: 'src/assets/blog/images' # Folder where user uploaded files should go
+public_folder: '/assets/blog/images' # Folder path where the files uploaded by the media library will be accessed
+
 slug:
   encoding: "ascii"
   clean_accents: true
