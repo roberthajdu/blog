@@ -8,8 +8,8 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "scully": "npx scully --",
-    "scully:build": "ng build && npm run scully -- --scanRoutes",
-    "scully:watch": "npx scully -- --watch",
+    "scully:build": "ng build && npm run scully --scanRoutes",
+    "scully:watch": "npx scully --watch",
     "scully:serve": "npx scully serve --"
   },
   "private": true,
