@@ -20,7 +20,7 @@ collections:
     preview_path: "blog/{{slug}}"
 media_folder: 'static/img' # Folder where user uploaded files should go
 slug:
-  encoding: "ascii",
-  clean_accents: true,
+  encoding: "ascii"
+  clean_accents: true
   sanitize_replacement: "_"
 display_url: https://hajdurobert.hu
