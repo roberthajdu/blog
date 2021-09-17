@@ -29,7 +29,11 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-              { "glob": "_redirects", "input": "src", "output": "/" },
+              {
+                "glob": "_redirects",
+                "input": "src",
+                "output": "/"
+              },
               "src/config.yml",
               "src/assets"
             ],
@@ -111,9 +115,21 @@
             ],
             "scripts": []
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
+            ]
+          }
         }
       }
     }
   },
-  "defaultProject": "hajdurobert-blog"
+  "defaultProject": "hajdurobert-blog",
+  "cli": {
+    "defaultCollection": "@angular-eslint/schematics"
+  }
 }
