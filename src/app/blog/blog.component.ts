@@ -23,7 +23,7 @@ export class BlogComponent {
           return route.route.startsWith(`/blog/`);
         })
       }),
-      map(routeList => [...routeList, ...routeList, ...routeList]),
+      // map(routeList => [...routeList, ...routeList, ...routeList]),
       tap(e => console.log(e))
     )
   }
