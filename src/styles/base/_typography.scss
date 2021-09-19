@@ -31,3 +31,9 @@ body {
     text-transform: uppercase;
     @include font-size(1rem);
 }
+
+.gradient-text {
+    background: -webkit-linear-gradient( #6665dd, #473bf0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

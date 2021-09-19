@@ -1,0 +1,20 @@
+.promotion {
+    background: -webkit-linear-gradient( #6665dd, #473bf0);
+    display: flex;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    color: white;
+    margin: 1.5rem;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    * {
+        margin: 0;
+    }
+
+    a {
+        font-size: 1.2rem;
+        color: white;
+    }
+}

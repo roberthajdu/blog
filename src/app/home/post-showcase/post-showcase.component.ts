@@ -23,7 +23,7 @@ export class PostShowcaseComponent {
       }),
       tap(e => console.log(e)),
       map(routeList => {
-        return routeList.sort((a,b) => new Date(a.publishDate).getTime() - new Date(b.publishDate).getTime())
+        return routeList.sort((a,b) => new Date(b.publishDate).getTime() - new Date(a.publishDate).getTime())
       }),
       map(routeList => {
         return routeList.slice(0, 2)

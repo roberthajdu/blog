@@ -1,0 +1,38 @@
+@use "~rfs/scss" as *;
+
+.blog-post {
+    @include rfs(2rem, padding-top);
+    h1 {
+        background: -webkit-linear-gradient( #6665dd, #473bf0);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 700;
+        @include font-size(3rem);
+        text-align: center;
+        @include rfs(1rem, padding-bottom);
+
+    }
+
+    small {
+
+    }
+
+    p {
+        @include rfs(1rem, font-size);
+    }
+
+    ul {
+        li {
+            list-style-type: none;
+            &:before {
+                content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+                color: #6665dd;
+                font-weight: bold; /* If you want it to be bold */
+                display: inline-block; /* Needed to add space between the bullet and the text */
+                width: 1.3rem; /* Also needed for space (tweak if needed) */
+                margin-left: -1em; /* Also needed for space (tweak if needed) */
+                font-size: 1.3rem;
+            }
+        }
+    }
+}

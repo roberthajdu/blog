@@ -3,7 +3,8 @@
 
 .hero {
     @include rfs(1rem, margin-top);
-
+    position: relative;
+    overflow: hidden;
     &__bg-svg {
         position: absolute;
         @include rfs(10rem, left);

@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: "Miért kell neked (is) egy saját weboldal? "
+title: "Miért kell neked (is) egy saját weboldal?"
 description: Ma már az emberek számára szinte elképzelhetetlen az élet az
   internet és az online tér szolgáltatásai és lehetőségei nélkül. Mindenki
   kezében ott az okostelefon bárhová is megy, otthon és a munkahelyen pedig a
@@ -12,6 +12,9 @@ slug: miert-kell-neked-is-egy-sajat-weboldal
 publishDate: 2021-09-19T21:36:05.413Z
 published: true
 ---
+
+# Miért kell neked (is) egy saját weboldal?
+
 Ma már az emberek számára szinte elképzelhetetlen az élet az internet és az online tér szolgáltatásai és lehetőségei nélkül. Mindenki kezében ott az okostelefon bárhová is megy, otthon és a munkahelyen pedig a számítógép, a laptop vagy a tablet várja. Napjainkban ha valakinek kérdése vagy problémája van, jó eséllyel beírja az internetre választ keresve. Ismerős? 
 
 Nos, akkor te hogy akarod, hogy a leendő partnerek és vásárlók rátaláljanak a cégedre vagy a vállalkozásodra, ha lehetőséget sem adsz nekik? Pedig ők a te egyedi megoldásaidat keresik! Segíts hát nekik azzal, hogy láthatóvá válsz az online térben is!

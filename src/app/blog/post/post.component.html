@@ -1,5 +1,10 @@
 <section>
-    <div class="container">
-        <scully-content></scully-content>    
+    <div class="container col-6">
+        <article class="blog-post" *ngIf="(blogPostMetadata$ | async) as blogPost">
+            <h1>{{blogPost?.title}}</h1>
+            <!-- <small>{{blogPost.publishDate | date: 'YYYY.MM.dd. HH:mm'}}</small> -->
+            <scully-content></scully-content>    
+        </article>
     </div>
 </section>
+<app-promotion></app-promotion>
