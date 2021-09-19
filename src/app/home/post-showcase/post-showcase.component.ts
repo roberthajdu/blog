@@ -8,7 +8,7 @@ import { map, tap } from 'rxjs/operators';
   templateUrl: './post-showcase.component.html',
   styleUrls: ['./post-showcase.component.scss']
 })
-export class PostShowcaseComponent implements OnInit {
+export class PostShowcaseComponent {
 
   posts$: Observable<ScullyRoute[]>;
 
@@ -30,9 +30,6 @@ export class PostShowcaseComponent implements OnInit {
       }),
       tap(e => console.log(e))
     )
-  }
-
-  ngOnInit(): void {
   }
 
 }

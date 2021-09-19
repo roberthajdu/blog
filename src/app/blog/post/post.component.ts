@@ -10,12 +10,8 @@ declare var ng: any;
   preserveWhitespaces: true,
   encapsulation: ViewEncapsulation.Emulated
 })
-export class PostComponent implements OnInit {
+export class PostComponent {
 
   constructor(private router: Router, private route: ActivatedRoute) { }
-
-  ngOnInit(): void {
-  }
-
 
 }

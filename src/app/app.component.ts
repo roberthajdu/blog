@@ -74,7 +74,7 @@ export class AppComponent implements OnInit {
   }
 
   
-  ngOnDestroy() {
+  // ngOnDestroy() {
     // unsubscribe to cookieconsent observables to prevent memory leaks
     // this.popupOpenSubscription?.unsubscribe();
     // this.popupCloseSubscription?.unsubscribe();
@@ -82,7 +82,7 @@ export class AppComponent implements OnInit {
     // this.statusChangeSubscription?.unsubscribe();
     // this.revokeChoiceSubscription?.unsubscribe();
     // this.noCookieLawSubscription?.unsubscribe();
-  }
+  // }
 
 
 }

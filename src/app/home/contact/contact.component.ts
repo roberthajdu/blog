@@ -9,7 +9,7 @@ import { FormService } from 'src/app/shared/services/form.service';
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss']
 })
-export class ContactComponent implements OnInit {
+export class ContactComponent {
 
   isSubmitted: boolean = false;
   contactForm = new FormGroup({
@@ -46,9 +46,6 @@ export class ContactComponent implements OnInit {
         };
       }
     )
-  };
-
-  ngOnInit() {
   };
 
 }
