@@ -7,6 +7,7 @@ description: Ma már az emberek számára szinte elképzelhetetlen az élet az
   számítógép, a laptop vagy a tablet várja. Napjainkban ha valakinek kérdése
   vagy problémája van, jó eséllyel beírja az internetre választ keresve.
   Ismerős?
+thumbnail: /assets/blog/images/miert-kell-neked-is-weboldal-thumbnail.jpeg
 slug: miert-kell-neked-is-egy-sajat-weboldal
 publishDate: 2021-09-19T21:36:05.413Z
 published: true
