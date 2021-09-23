@@ -6,12 +6,19 @@
 }
 section {
     background-color: #002233;
-    color: #FFF;
+    color: #fff;
     //@include rfs(-8rem, margin-top);
     @include rfs(5rem, padding-top);
     @include rfs(5rem, padding-bottom);
-  
-
 }
 .services {
+    .service-item {
+        // position: relative;
+        &__icon {
+            width: 100px;
+            // position: absolute;
+            // left: 0;
+            // display: inline-block;
+        }
+    }
 }

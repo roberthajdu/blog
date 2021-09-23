@@ -11,6 +11,8 @@ import { PostShowcaseComponent } from './post-showcase/post-showcase.component';
 import { ContactComponent } from './contact/contact.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { WorkflowComponent } from './workflow/workflow.component';
+import { StepComponent } from './workflow/step/step.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { HttpClientModule } from '@angular/common/http';
     PortfolioComponent,
     ServicesComponent,
     PostShowcaseComponent,
-    ContactComponent
+    ContactComponent,
+    WorkflowComponent,
+    StepComponent
   ],
   imports: [
     CommonModule,

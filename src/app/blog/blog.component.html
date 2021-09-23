@@ -3,10 +3,12 @@
         <h1 class="h2 gradient-text text-center pt-4 pb-3">Blog</h1>
         <div *ngFor="let post of posts$ | async" class="blog-post d-flex flex-row" [routerLink]="[post.route]">
             <div class="blog-post__img-wrapper col-6">
-                <img class="blog-post__img--zoom" [src]="post.thumbnail || '/assets/blog/images/pexels-markus-spiske-1089440.jpg'" alt="thumbnail">
+                <img class="blog-post__img--zoom"
+                    [src]="post.thumbnail || '/assets/blog/images/pexels-markus-spiske-1089440.jpg'" alt="thumbnail">
             </div>
             <div class="blog-post__details">
-                <a href="{{post.route}}"></a><h4>{{post.title}}</h4>
+                <a href="{{post.route}}"></a>
+                <h4>{{post.title}}</h4>
                 <p class="blog-post__details-description">{{post.description}}</p>
                 <!-- <a class="blog-post__details-link" href="{{post.route}}">Elolvasom</a> -->
             </div>
