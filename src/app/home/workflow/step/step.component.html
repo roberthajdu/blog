@@ -1,0 +1,8 @@
+<div class="step d-flex align-items-center pb-4">
+    <div class="step-number">{{ (number.toString().length === 1) ? '0'+number : number }}</div>
+    <div class="step-content">
+        <h3>{{ title }}</h3>
+        <ng-content></ng-content>
+    </div>
+
+</div>

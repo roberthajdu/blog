@@ -1,0 +1,17 @@
+@import "../../../../styles/abstracts/variables";
+
+.step {
+    position: relative;
+    padding-left: 4rem;
+}
+
+.step-number {
+    position: absolute;
+    content: "‘";
+    color: #6665dd;
+    font: 700 5em/2em sans-serif;
+    opacity: 20%;
+    top: -0.5em;
+    left: -0.05em;
+    right: unset;
+}

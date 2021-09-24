@@ -1,0 +1,89 @@
+@import "../../../styles/abstracts/variables";
+
+.quote-section {
+    background-color: $color-primary;
+}
+blockquote {
+    color: white;
+    position: relative;
+    font: inherit;
+    padding: 1em 0 0 0;
+}
+
+blockquote::before {
+    position: absolute;
+    content: "‘";
+    color: white;
+    font: 700 15em/2em sans-serif;
+    opacity: 20%;
+    top: -0.5em;
+    left: -0.05em;
+    right: unset;
+}
+
+blockquote::after {
+    position: absolute;
+    content: "‘";
+    color: white;
+    font: 700 15em/2em sans-serif;
+    opacity: 50%;
+    top: -0.5em;
+    left: -0.25em;
+    right: unset;
+}
+
+blockquote[role="review"]::before {
+    position: absolute;
+    content: "’";
+    color: white;
+    font: 700 15em/2em sans-serif;
+    opacity: 20%;
+    top: -0.5em;
+    left: unset;
+    right: 0.25em;
+}
+
+blockquote[role="review"]::after {
+    position: absolute;
+    content: "’";
+    color: white;
+    font: 700 15em/2em sans-serif;
+    opacity: 50%;
+    top: -0.5em;
+    left: unset;
+    right: 0.05em;
+}
+
+blockquote cite {
+    display: block;
+    color: white;
+    font: 700 150%/1.5rem sans-serif;
+    margin: 1em 0 0 0;
+}
+
+blockquote cite::before {
+    content: "— ";
+    font: inherit;
+    color: white;
+}
+
+blockquote q {
+    quotes: "" "" "" "";
+    display: block;
+    color: #9b9ece;
+    font: inherit;
+}
+
+blockquote q::before {
+    content: no-open-quote;
+}
+
+blockquote q::after {
+    content: no-close-quote;
+}
+
+blockquote i {
+    display: block;
+    color: white;
+    margin: 1em 0 0 0;
+}
