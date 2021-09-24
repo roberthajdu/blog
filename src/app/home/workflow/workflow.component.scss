@@ -1,0 +1,5 @@
+@use "~rfs/scss" as *;
+
+.workflow {
+    @include rfs(8rem, padding-top);
+}

@@ -13,6 +13,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { WorkflowComponent } from './workflow/workflow.component';
 import { StepComponent } from './workflow/step/step.component';
+import { QuoteComponent } from './quote/quote.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { StepComponent } from './workflow/step/step.component';
     PostShowcaseComponent,
     ContactComponent,
     WorkflowComponent,
-    StepComponent
+    StepComponent,
+    QuoteComponent
   ],
   imports: [
     CommonModule,
